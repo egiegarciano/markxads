@@ -164,6 +164,8 @@ h2 {
     width: 100% !important;
     object-fit: cover;
     height: 450px !important;
+    cursor: pointer;
+    z-index: 4;
 }
 
 /* Form Styles */
@@ -388,4 +390,17 @@ select:-webkit-autofill:focus {
 
 .font-80 {
     font-size: 80px;
+}
+
+/* Lazy Loading */
+img.lazy {
+    width: 700px; 
+    height: 467px; 
+    display: block;
+    z-index: 0;
+    
+    /* optional way, set loading as background */
+    background-image: url('/assets/loading.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
